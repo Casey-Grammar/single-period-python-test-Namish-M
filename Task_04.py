@@ -25,7 +25,7 @@ def expand_subject_codes(codes):
         "ART": "Art"
     }
 
-    return [subject_codes[codes] for codes in codes if codes in subject_codes]
+    return [subject_codes[codes.upper()] for codes in codes if codes.upper() in subject_codes]
     pass
 
 
