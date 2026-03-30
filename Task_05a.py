@@ -8,7 +8,13 @@
 # You may assume the list will contain at least one number.
 
 def find_largest(numbers):
-    # Write your code here
+    largest = numbers[0]
+
+    for number in numbers[1:]:
+        if number > largest:
+            largest = number
+
+    return largest
     pass
 
 
