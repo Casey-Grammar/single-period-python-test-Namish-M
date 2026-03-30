@@ -17,7 +17,15 @@
 # returns ["Mathematics", "Science", "English"]
 
 def expand_subject_codes(codes):
-    # Write your code here
+    subject_codes = {
+        "ENG": "English",
+        "MAT": "Mathematics",
+        "SCI": "Science",
+        "HIS": "History",
+        "ART": "Art"
+    }
+
+    return [subject_codes[codes] for codes in codes if codes in subject_codes]
     pass
 
 
