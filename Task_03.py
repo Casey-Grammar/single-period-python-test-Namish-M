@@ -12,7 +12,12 @@
 # returns ["Wonder", "Hatchet", "Matilda"]
 
 def replace_book(books, old_book, new_book):
-    # Write your code here
+    if old_book in books:
+        index = books.index(old_book)
+
+        books[index]=new_book
+
+    return books
     pass
 
 
